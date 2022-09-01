@@ -1,0 +1,375 @@
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+@import url("reset.css");
+@import url("typography.css");
+@import url("buttons.css");
+@import url("header.css");
+@import url("footer.css");
+
+
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+
+:root {
+    --color-primary: cornflowerblue;
+
+    --color-blue: blue;
+    --color-gray-light: lightgray;
+    --color-gray-dark: #2c2c3a;
+    --color-white: #fff;
+
+    --shadow-base: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --navi-height: 192px;
+}
+
+
+html {
+    margin: 0px 20px 10px 20px;
+}
+
+
+body {
+
+    max-height: 100vh;
+    max-width: 100vw;
+    padding-top: 200px;
+    margin-bottom: 5px;
+
+
+
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+h1,
+h5 {
+    margin-top: 15px;
+}
+
+h6 {
+
+    margin-top: 10px;
+}
+
+p {
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+
+}
+
+h6.fig {
+    font-size: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+i {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.slides__title{
+    color: var(--color-primary);
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Slideshow container------ */
+.slideshow-container {
+
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    position: relative;
+    padding-block: 30px;
+
+}
+
+.mySlides img {
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: var(--color-primary);
+    font-size: 8px;
+
+    font-style: italic;
+    padding: 8px 12px;
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
+    border-radius: 15px;
+    box-shadow: var(--shadow-large);
+    left: 0;
+    width: 100%;
+    text-align: center;
+    
+    bottom: -30px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* ----- */
+
+
+
+/* manual */
+
+label {
+    display: block;
+    border-radius: 3%;
+    margin-bottom: 4px;
+}
+
+figure figcaption {
+
+    font-size: 8px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+figure {
+    position: relative;
+    text-align: center;
+}
+
+.manual img {
+    width: 100%;
+
+}
+
+
+
+.bold {
+    font-weight: bold;
+}
+
+p span.underline {
+    text-decoration: underline;
+}
+
+.manual div.italic {
+    font-size: 6px;
+    font-style: italic;
+}
+
+
+
+
+    /* download */
+.download{
+    margin-block: 40px;
+}
+    .download-list {
+        margin-inline: 30px;
+        display: flex;
+        gap:50px;
+        justify-content: center;
+        align-items: center;
+
+        list-style-type: none;
+    }
+
+
+    .download-list li {
+
+        color: var(--color-gray-light);
+
+        vertical-align: baseline;
+
+
+        width: 80px;
+        height: 80px;
+        padding: 20px;
+        opacity: 0.5;
+        background: #ddd;
+        border-radius: 50%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    .download-list li i {
+       font-size: 40px;
+       
+    }
+
+    .download__title {
+        text-align: center;
+        padding: 20px;
+        color: var(--color-primary);
+    }
+
+    @media screen and (min-width:300px) {
+
+         
+        .slideshow-container {
+            width: 250px;
+            height: 200px;
+        }
+    
+    
+    }
+    
+    @media screen and (min-width:768px) {
+        .manual figure {
+            width: auto;
+        }
+    
+        .manual figure img {
+            width: auto;
+        }
+    
+    
+    
+        main {
+    
+            font-size: 18px;
+        }
+    
+        .slideshow-container {
+            width: 400px;
+            height: 300px;
+        }
+    
+       
+    }
+
+
+
+
+
+
+    @media screen and (min-width:900px) {
+
+      
+
+
+    }
+    @media screen and (min-width:1300px) {
+
+      
+
+    }
+
+    @media screen and (min-width:1600px) {
+
+
+
+    }
+
+
+
+@media screen and (min-width:1800px) {
+
+
+    .text {
+        display: block;
+        bottom: -30px;
+
+    }
+
+
+}

@@ -1,0 +1,44 @@
+/* Btns ---------- */
+.btn--primary  {
+    
+    color: var(--color-primary);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
+    padding: 0.4rem 0.4rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+  .header .btn.mobile-menu {
+    margin-left: auto;
+    margin-right: 2rem;
+    padding: 0;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 0;
+    order: 2;
+  }
+  
+  .header .mobile-menu:hover {
+    color: var(--color-primary);
+    background-color: unset;
+  }
+  
+  .btn--primary {
+    color: var(--color-primary);
+    background-color: var(--color-white);
+  }
+  
+
+  
+  @media (hover: hover) and (pointer: fine) {
+    .btn:hover {
+      color: var(--color-white);
+      background-color: var(--color-primary)
+    }
+  
+    .btn--primary:hover {
+      color: var(--color-primary);
+      background-color: var(--color-light-gray);
+    }
+  }
